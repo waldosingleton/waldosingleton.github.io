@@ -1,213 +1,140 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>W3.CSS Template</title>
+<title>Waldo Singleton</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-/* Set the width of the sidebar to 120px */
-.w3-sidebar {width: 120px;background: #222;}
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 120px}
-/* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 </style>
 </head>
-<body class="w3-black">
+<body class="w3-light-grey">
 
-<!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-  <!-- Avatar image in top left corner -->
-  <img src="/w3images/avatar_smoke.jpg" style="width:100%">
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <i class="fa fa-home w3-xxlarge"></i>
-    <p>HOME</p>
-  </a>
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-user w3-xxlarge"></i>
-    <p>ABOUT</p>
-  </a>
-  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-eye w3-xxlarge"></i>
-    <p>PHOTOS</p>
-  </a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-envelope w3-xxlarge"></i>
-    <p>CONTACT</p>
-  </a>
-</nav>
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
 
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
-<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
-    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
-  </div>
-</div>
-
-<!-- Page Content -->
-<div class="w3-padding-large" id="main">
-  <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Waldo Singleton.</h1>
-    <p>I'm a technology and AI enthusiast, master's student and retired athlete and rowing coach.</p>
-    <img src="290600488_448599597271341_8257204138163785452_n.jpeg" alt="henley_rowing" class="w3-image" width="992" height="1108">
-  </header>
-
-  <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey">My Name</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p>I am a disciplined and enthusiastic Computer Science graduate, currently studying towards my Masters in Artificial Intelligence at The University of Auckland. I am motivated to explore new opportunities, solve problems, and continuously learn new technical, practical and life skills. 
-As a team player, I value diverse perspectives and work well in teams collaborating to achieve a common goal.
-    </p>
-    </div><br>
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+    <!-- Left Column -->
+    <div class="w3-third">
     
-    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">11+</span><br>
-        Partners
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">55+</span><br>
-        Projects Done
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">89+</span><br>
-        Happy Clients
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">150+</span><br>
-        Meetings
-      </div>
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+          <img src="/w3images/avatar_hat.jpg" style="width:100%" alt="Avatar">
+          <div class="w3-display-bottomleft w3-container w3-text-black">
+            <h2>Waldo Singleton</h2>
+          </div>
+        </div>
+        <div class="w3-container">
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Student in Master's of Artificial Intelligence</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Auckland, NZ</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>waldo@singleton.co.nz</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+64 27 318 4385</p>
+          <hr>
+
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
+          <p>Python</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
+          </div>
+          <p>SQL</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:70%">
+              <div class="w3-center w3-text-white">80%</div>
+            </div>
+          </div>
+          <br>
+
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
+          <p>English</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
+          </div>
+          <p>Afrikaans</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
+          </div>
+          <br>
+        </div>
+      </div><br>
+
+    <!-- End Left Column -->
     </div>
 
-    <button class="w3-button w3-light-grey w3-padding-large w3-section">
-      <i class="fa fa-download"></i> Download Resume
-    </button>
+    <!-- Right Column -->
+    <div class="w3-twothird">
     
-    <!-- Grid for pricing tables -->
-    <h3 class="w3-padding-16 w3-text-light-grey">My Price</h3>
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half w3-margin-bottom">
-        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
-          <li class="w3-padding-16">Web Design</li>
-          <li class="w3-padding-16">Photography</li>
-          <li class="w3-padding-16">5GB Storage</li>
-          <li class="w3-padding-16">Mail Support</li>
-          <li class="w3-padding-16">
-            <h2>$ 10</h2>
-            <span class="w3-opacity">per month</span>
-          </li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
-          </li>
-        </ul>
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Autonomous Manager / The University of Auckland Formula SAE Team</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>August 2023 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Power BI Developer / Alumni Relations and Development, University of Auckland</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+          <p>Alumni and friends, an over 223,000-strong network spread across the Auckland region, throughout New Zealand and around the globe. Alumni Relations and Development enables alumni and friends to stay connected with the University and one another and to enjoy a range of benefits and services.
+•	Created a propensity model in Python using a random forest classifier to predict the likelihood that someone will be a donor
+•	Recreating weekly Excel reports into live Power BI reports through Blackbaud API, replacing weekly SQL queries
+</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Modern Workplace Consultant (Intern) / Foodstuffs North Island</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Nov 2022 - Feb 2023</h6>
+          <p>Foodstuffs NI is New Zealand’s largest grocery company that owns four retail franchises, namely New World, Pak n Save, Four Square and Gilmours.
+•	I worked at Foodies as a summer intern in the Modern Workplace Team. My team manages the company’s modern workplace tools such as Microsoft Teams, MS Power Apps and Jira.
+•	My project for the summer was to research the use of chatbots in the modern workplace and create a framework to building chatbots from problem identification to launch and maintenance. I also created a MVP bot which will be launched internally at Foodstuffs in 2023. I also gained experience in using Power BI by building a search tool currently used by New World store buyers internally.
+•	I learned a lot by working with Kanban in an Agile environment during my time here. It was a big part of my experience and helped me grow professionally.
+</p><br>
+        </div>
       </div>
 
-      <div class="w3-half">
-        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Pro</li>
-          <li class="w3-padding-16">Web Design</li>
-          <li class="w3-padding-16">Photography</li>
-          <li class="w3-padding-16">50GB Storage</li>
-          <li class="w3-padding-16">Endless Support</li>
-          <li class="w3-padding-16">
-            <h2>$ 25</h2>
-            <span class="w3-opacity">per month</span>
-          </li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
-          </li>
-        </ul>
+      <div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>W3Schools.com</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever</h6>
+          <p>Web Development! All I need to know in one place</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>London Business School</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2015</h6>
+          <p>Master Degree</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>School of Coding</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2010 - 2013</h6>
+          <p>Bachelor Degree</p><br>
+        </div>
       </div>
-    <!-- End Grid/Pricing tables -->
+
+    <!-- End Right Column -->
     </div>
     
-    <!-- Testimonials -->
-    <h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>  
-    <img src="/w3images/bandmember.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-margin-right">Chris Fox.</span> CEO at Mighty Schools.</p>
-    <p>Waldo Singleton saved us from a web disaster.</p><br>
-    
-    <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-margin-right">Rebecca Flex.</span> CEO at Company.</p>
-    <p>No one is better than Waldo Singleton.</p>
-  <!-- End About Section -->
+  <!-- End Grid -->
   </div>
   
-  <!-- Portfolio Section -->
-  <div class="w3-padding-64 w3-content" id="photos">
-    <h2 class="w3-text-light-grey">My Photos</h2>
-    <hr style="width:200px" class="w3-opacity">
-
-    <!-- Grid for photos -->
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half">
-        <img src="/w3images/wedding.jpg" style="width:100%">
-        <img src="/w3images/rocks.jpg" style="width:100%">
-        <img src="/w3images/sailboat.jpg" style="width:100%">
-      </div>
-
-      <div class="w3-half">
-        <img src="/w3images/underwater.jpg" style="width:100%">
-        <img src="/w3images/chef.jpg" style="width:100%">
-        <img src="/w3images/wedding.jpg" style="width:100%">
-        <img src="/w3images/p6.jpg" style="width:100%">
-      </div>
-    <!-- End photo grid -->
-    </div>
-  <!-- End Portfolio Section -->
-  </div>
-
-  <!-- Contact Section -->
-  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-    <h2 class="w3-text-light-grey">Contact Me</h2>
-    <hr style="width:200px" class="w3-opacity">
-
-    <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Chicago, US</p>
-      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
-      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
-    </div><br>
-    <p>Let's get in touch. Send me a message:</p>
-
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
-      <p>
-        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </p>
-    </form>
-  <!-- End Contact Section -->
-  </div>
-  
-    <!-- Footer -->
-  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-  <!-- End footer -->
-  </footer>
-
-<!-- END PAGE CONTENT -->
+  <!-- End Page Container -->
 </div>
+
+<footer class="w3-container w3-teal w3-center w3-margin-top">
+  <p>Find me on social media.</p>
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
 
 </body>
 </html>
